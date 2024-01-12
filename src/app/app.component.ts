@@ -11,4 +11,39 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'ELDC-LIMS-V3';
+
+
+
+
+
+
+
+
+  responsiveMenu:any;
+  defaultStatus=true;
+  openNav(status:any)
+  {
+    if(status===this.defaultStatus)
+    {
+      this.responsiveMenu=
+      {
+        'display':'block'
+      }
+      this.defaultStatus = false;
+    }
+    else
+    {
+      this.responsiveMenu =
+      {
+       'display':null
+      }
+      this.defaultStatus=true;
+    }
+  }
+
+
 }
+
+
+
+

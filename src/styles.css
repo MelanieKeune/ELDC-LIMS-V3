@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+/* top nav bar onder*/
+
+.googlefont{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+.topnav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1px solid rgb(124, 118, 118);
+}
+
+.topnav a{
+  float: left;
+  text-align:center;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 14px 16px;
+}
+
+
+.Menu{
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+  right: 50px;
+  cursor: pointer;
+  color: #262626;
+
+}
+
+
+.main-content{
+  margin-top: 10px;
+}
+
+@media screen and (max-width:500px){
+
+  .Menu{
+    display:block;
+  }
+
+  .sidebar{
+    display: none;
+  }
+}
+
+
+/* left side nav onder */
+.sidebar{
+  position: fixed;
+  top: 63px;
+  overflow: auto;
+  background-color: #7EBADE;
+  height: 100%;
+  border-right: 1px solid rgb(0, 0, 0);
+  padding: 30px 5px;
+  margin: 0px;
+  width: 150px;
+  list-style-type: none;
+  display: none;
+
+}
+
+.sidebar a{
+  text-decoration: none;
+  padding: 20px 10px;
+  color: #4B5482;
+  text-align: left;
+  display: block;
+  list-style-type: none;
+}
+
+.sidebar i{
+  padding-right: 5px;
+
+}
