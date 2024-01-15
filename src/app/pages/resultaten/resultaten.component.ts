@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-resultaten',
-  standalone: true,
-  imports: [],
   templateUrl: './resultaten.component.html',
-  styleUrl: './resultaten.component.css'
+  styleUrls: ['./resultaten.component.css']
 })
-export class ResultatenComponent {
+export class ResultatenComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }
