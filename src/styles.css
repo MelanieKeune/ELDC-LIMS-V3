@@ -40,7 +40,9 @@
 
 
 .main-content{
-  margin-top: 10px;
+  margin-top: 63px; /* Hoogte van topnav */
+  margin-left: 150px; /* Breedte van de sidebar */
+  padding: 10px;
 }
 
 @media screen and (max-width:500px){
