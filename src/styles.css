@@ -10,7 +10,7 @@
 
 .topnav {
   width: 100%;
-  position: fixed;
+  margin-left: 150px;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -38,10 +38,9 @@
 
 }
 
-
 .main-content{
-  margin-top: 63px; /* Hoogte van topnav */
-  margin-left: 150px; /* Breedte van de sidebar */
+  margin-top: 0px; /* Hoogte van topnav */
+  margin-left: 0px; /* Breedte van de sidebar */
   padding: 10px;
 }
 
@@ -60,7 +59,7 @@
 /* left side nav onder */
 .sidebar{
   position: fixed;
-  top: 63px;
+  top: 0px;
   overflow: auto;
   background-color: #7EBADE;
   height: 100%;
@@ -91,4 +90,13 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.circular-image {
+  border-radius: 50%; /* Zet de border-radius op 50% om een cirkel te creëren */
+  width: 100px; /* Pas de breedte van de afbeelding aan zoals gewenst */
+  height: 100px; /* Pas de hoogte van de afbeelding aan zoals gewenst */
+  object-fit: cover; /* Behoudt de beeldverhoudingen en dekt het gebied af */
+  margin: 0 auto; /* Centreert de afbeelding binnen de container */
+  display: block; /* Zorgt ervoor dat de marges goed worden toegepast */
 }

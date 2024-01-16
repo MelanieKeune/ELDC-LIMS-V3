@@ -1,10 +1,11 @@
-<div class = "topnav shadow p-1">
+<div class="topnav shadow p-1" [style.margin-left]="leftNavMargin">
   <span class="Menu"(click)="openNav(true)"><i class="bi bi-list"></i></span>
 </div>
 <!-- top nav barr -->
 
 <!-- left side bar -->
 <div class="sidebar shadow p-2" id="sidebar" [ngStyle]="responsiveMenu">
+  <img class="circular-image" src="../assets/ELDC-inimini.png" alt="No Image">
   <ul>
       <li><a routerLink="/dashboard">Dashboard</a></li>
       <li><a routerLink="/inzendingen">Inzendingen</a></li>
@@ -15,9 +16,8 @@
       <li><a routerLink="/instellingen"><i class="bi bi-gear-wide"></i> Instellingen</a></li>
       <li><a routerLink="/logout"><i class="bi bi-box-arrow-right"></i> Log out</a></li>
   </ul>
-
 </div>
 
-<div class="main-content">
+<div class="main-content" [style.margin-left]="leftNavMargin">
   <router-outlet></router-outlet>
 </div>

@@ -14,27 +14,22 @@ export class AppComponent {
 
   responsiveMenu:any;
   defaultStatus=true;
+  leftNavMargin = '0px';
   openNav(status:any)
   {
     if(status===this.defaultStatus)
     {
-      this.responsiveMenu=
-      {
-        'display':'block'
-      }
+      this.responsiveMenu = { 'display': 'block' };
+      this.leftNavMargin = '150px';
       this.defaultStatus = false;
     }
     else
     {
-      this.responsiveMenu =
-      {
-       'display':null
-      }
-      this.defaultStatus=true;
+      this.responsiveMenu = { 'display': null };
+      this.leftNavMargin = '0';
+      this.defaultStatus = true;
     }
   }
-
-
 }
 
 
