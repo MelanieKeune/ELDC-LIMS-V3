@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {jsPDF} from 'jspdf';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -11,6 +12,39 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'ELDC-LIMS-V3';
+  elem=document.documentElement;
+  
+  
+  Enterfullscreen()
+  {
+    if(this.elem.requestFullscreen){
+      this.elem.requestFullscreen();
+    }
+
+  }
+
+  Exitfullscreen()
+  {
+
+    if(document.exitFullscreen){
+      document.exitFullscreen();
+    }
+
+  }
+
+
+
+
+  GeneratePdf(){ 
+    const doc = new jsPDF();
+
+    doc.text('test pdf voor grafiek!', 10, 10);
+
+    doc.save('Grafiek.pdf');
+
+  }
+
+  
 
   responsiveMenu:any;
   defaultStatus=true;

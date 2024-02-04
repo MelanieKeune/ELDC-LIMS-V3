@@ -1,5 +1,9 @@
 <div class="topnav shadow p-1" [style.margin-left]="leftNavMargin">
   <span class="Menu"(click)="openNav(true)"><i class="bi bi-list"></i></span>
+
+  <button type="button" (click)="Enterfullscreen()">Enter Fullscreen</button>
+  <button type="button" (click)="Exitfullscreen()">Exit Fullscreen</button>
+  <button class="PDFButton" (click)="GeneratePdf()">Create a PDF</button> 
 </div>
 <!-- top nav barr -->
 
@@ -21,3 +25,6 @@
 <div class="main-content" [style.margin-left]="leftNavMargin">
   <router-outlet></router-outlet>
 </div>
+
+
+
